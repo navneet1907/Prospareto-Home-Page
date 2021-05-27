@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Don't know how to invest in share markets? Or don't have the time to research the next best investment? On Prospareto SEBI certified Investment Advisors and Research Analysts give you well-researched share market investment recommendations">
+    <meta name="keywords" content="share market,stock market,invest in share market,invest in stock market,stock trading,investment advisor,research analyst,SEBI registered,financial consulting,portfolio review">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" media="print" onload="this.media='all'">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+   
+    <link rel="icon" href="./assests/logo192.png" />
+    <link rel="apple-touch-icon" href="./assests/logo192.png" />
+    <link rel="stylesheet" href="./css/miniutils.css">
+    <link rel="stylesheet" href="./css/mininavbar.css">
+    <link rel="stylesheet" href="./css/mininewhome.css">
+    <link rel="stylesheet" href="./css/minifooter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="print" onload="this.media='all'">
+    <title>Prospareto - Find the best investing and trading ideas.</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180232826-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-180232826-1');
+    </script>
+</head>
+
+<body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+
+    <div class="menu-dropdown" id="drop-down-mob" style="height: auto; padding: 0 0 10px 0" >
+        <div class="menu-text" id="explore">Stock Recommenders</div>
+        <div class="menu-text" onclick="{gotoconsulting()}">Financial Guidance</div>
+        <div class="menu-text" onclick="{goToFeeds()}">Blogs</div>
+        <div class="menu-text" onclick="{goToLearn()}">Learn</div>
+        <div class="menu-text" onclick="{goToContact()}">Contact us</div>
+        <div class="menu-text" onclick="{goToCustomerLogin()}">
+            Customer Login
+        </div>
+        <div class="menu-text" onclick="{goToExpertLogin()}">Expert Login</div>
+    </div>
+    <div class="menu-dropdown log1" id="drop-down" style="height: auto; padding: 0 0 10px 0;cursor: pointer;" onmouseleave="{closeLogins()}" >
+        <button class="menu-text sm-hidden" onclick="{goToCustomerLogin()}">Customer login</button>
+        <button class="menu-text sm-hidden" onclick="{goToExpertLogin()}">Expert Login</button>
+    </div>
+    <header class="row alg-ctr jst-spc-btw">
+        <a href="./index.html" class="nav-logo">
+            <img src="./assests/prospaerto-logo.svg" height="50" width="134" alt="prospaerto logo">
+        </a>
+        <div class="nav-links">
+            <button class="sm-un-contained sm-hidden" onclick="openServices()">Services<img src="assests/down.png" style="padding-left:7px;"></button>
+            <div class="menu-dropdown log" id="Services" style="height: auto; padding: 0 0 10px 0" onmouseleave="{closeServices()}">
+                <button class="menu-text sm-hidden" id="explore">Stock Recommenders</button>
+                <button class="menu-text sm-hidden" id="letcons">Financial Advice </button>
+                <button class="menu-text sm-hidden" onclick="goToLearn()">Learn</button>
+                <!-- <button class="menu-text sm-hidden" onclick="goToLearn()">Screener</button> -->
+                <!-- <button class="menu-text sm-hidden" onclick="goToLearn()">Community</button> -->
+                <button class="menu-text sm-hidden" onclick="goToFeeds()">Blogs</button>
+            </div>
+            
+            <button class="sm-un-contained sm-hidden" onclick="goToContact()">Support</button>
+            <button class="sm-un-contained sm-hidden" onmouseover="{openLogins()}">Login</button>
+            <button class="sm-primary sm-hidden" onclick="goToSignup()">Signup</button>
+        </div>
+        <div class="right-nav sm-dis">
+            <button class="sm-primary " onclick="goToSignup()">Signup</button>
+            <button class="sm-primary mgr-r-8 sm-hidden" onclick="goToSignup()"  >Sign up</button>
+            <button class="icon-btn" id="mob-menu" >
+                <img src="./assests/bars-solid.svg" id="mob-menu"  alt="bars" width="24" height="24">
+            </button>
+        </div>
+    </header>
+    <main class="row alg-ctr warp" >
+        <div class="six sm-twelve hero-txt alg-ctr">
+            <h1><span>Think Prosperity.
+                <br></span>Think Prospareto!</h1>
+            <p>Get the best share trading and investment ideas directly from SEBI registered experts.</p>
+            <button class="primary"  onclick="smoothScroll(document.getElementById('carousel-test'))">Let's Get Started</a></button>
+            <button class="primary-btn1" onclick="loadVideo()" ><img src="./assests/Play.png" width="25" height="15" style="padding: 0px 5px; vertical-align: middle;"/>Watch Video</button>
+        </div>
+        <div class="six sm-twelve sm-hidden">
+            <img src="./assests/hero.png" class='hero-img'  alt="Hero image">
+        </div>
+    </main>
+    <section class="section-step row alg-ctr warp "  id="carousel-test">
+        <div class="twelve alg-ctr row jst-spc-btw btn-sec sm-scroll ">
+                <button id="btn-sub-screen" class="sm-un-button four md-four row sm-warp sm-jst-ctr  alg-ctr sm-four sm-margin" onclick="divVisibility('Div1','text-green','1')" >
+                    <span class="material-icons txt-ctr sm-one" style=" width:15px; margin-right: 10px;">
+                        rule
+                    </span>
+                    Stock Recommenders
+                </button>
+                <!-- <button id="btn-sub-screen" class="sm-un-button three md-three sm-warp sm-jst-ctr row alg-ctr sm-three sm-sm-margin" onclick="divVisibility('Div2','text-purple','2')"> 
+                    <span class="material-icons txt-ctr sm-one" style=" width:15px; margin-right: 10px;">
+                        stacked_line_chart
+                    </span>
+                    Screener
+                </button> -->
+                <button id="btn-sub-screen" class="sm-un-button three md-four sm-warp sm-jst-ctr row alg-ctr sm-four sm-sm-margin" onclick="divVisibility('Div2','text-darkgreen','2')">
+                    <i class="material-icons txt-ctr sm-one" style=" width:15px; margin-right: 10px;">video_call</i>
+                    Financial guidance
+                </button>
+                <!-- <button id="btn-sub-screen" class="sm-un-button three md-three sm-warp sm-jst-ctr row alg-ctr sm-four sm-sm-margin" onclick="divVisibility('Div4','text-green','4')">
+                    <span class="material-icons txt-ctr sm-one" style=" width:15px; margin-right: 10px;">
+                        people_outline
+                        </span>Community
+                </button> -->
+                <button id="btn-sub-screen" class="sm-un-button four md-two row sm-warp sm-jst-ctr alg-ctr sm-two sm-sm-margin learn-margin" onclick="divVisibility('Div3','text-orange','3')">
+                    <span class="material-icons txt-ctr sm-one" style="  width:15px;  margin-right: 14px;">
+                        school
+                        </span>Learn
+                </button>
+                
+        </div>
+        <div class="row sm-col twelve jst-ctr alg-ctr step-count sm-col-rev " id="Div1"  >
+            <div class="six sm-twelve alg-ctr sr-text ">
+                <h1>Invest like a <span class="Pro">Pro</span> just in few steps</h1>
+                <p>Reliable stock investing and trading recommendations by successful and experienced SEBI registered experts. Subscribe in a few steps and start receiving well-researched stock market recommendations.</p>
+                <button class="primary-green" id="explore" >Get Recommendations</button>
+                <button class="primary-btn1" onclick="gotoriskprofiler()" >Know Your Risk</button>
+            </div>
+            <div class="six sm-twelve">
+                <img src="./assests/sr.png" class='hero-img' width="100" height="auto" alt="Hero image">
+            </div>
+        </div>
+        <!-- <div class="row sm-col twelve jst-ctr alg-ctr step-count hidden sm-col-rev " id="Div2" style="display: none;">
+            <div class="six sm-twelve alg-ctr sr-text">
+                <h1>Invest like a <span class="Pro">Pro</span>  in a few steps</h1>
+                <p>GLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                <button class="primary-purple" id='try' >Get Recommendations</button>
+                
+            </div>
+            <div class="six sm-twelve">
+                <img src="./assests/screener.png" class='hero-img1'  alt="Hero image">
+            </div>
+        </div> -->
+        <div class="row sm-col twelve jst-ctr alg-ctr step-count hidden sm-col-rev " id="Div2" style="display: none;">
+            <div class="six sm-twelve  alg-ctr fg-text">
+                <h1 >Finances? Complicated? Not at all.</h1>
+                  <p>Need a smart financial plan to realize your dreams? Or improve the returns of your underperforming portfolio? 
+                    Have a one on one discussion with experts.</p>
+                 
+            <button class="primary-fg" onclick="gotoconsulting()" id='letcons'>Let's Get Started</button>
+         </div>
+            <div class="six sm-twelve">
+                <img src="./assests/community.png" class="hero-img" alt="Community image">
+            </div>
+        </div>
+        <!-- <div class="row sm-col twelve jst-ctr alg-ctr step-count sm-col-rev   " id="Div4" style="display: none;" >
+            <div class="six sm-twelve  alg-ctr sr-text">
+                <h1> Have a question?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                <button class="primary" id='try' >Let's Try</button>
+            </div>
+            <div class="six sm-twelve">
+                <img src="./assests/commu.png" class='hero-img'  alt="Hero image">
+            </div>
+        </div> -->
+        <div class="row sm-col twelve jst-ctr alg-ctr step-count sm-col-rev " id="Div3" style="display: none;" >
+            <div class="six sm-twelve  alg-ctr sr-text">
+                <h1> Curious how the stock market works?</h1>
+                <p>Have a look at our short, and simple reads to know about stock markets, investing, trading, Mutual Funds.... and so much more!</p>
+               
+
+
+                <button class="primary-orange" onclick="goToLearn()" >Let's Get Started</button>
+            </div>
+            <div class="six sm-twelve">
+                <img src="./assests/Learn.png" class='hero-img'  alt="Hero image">
+            </div>
+        </div>      
+    </section>
+    <section class="people alg-ctr jst-ctr twelve">
+        <!-- <div class="row alg-ctr jst-ctr twelve sm-twelve sm-sm-margin">
+            <h2>What they say about Prospareto...</h2>
+        </div>
+        <div class="slider-container">
+            <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                    <i class="fas fa-angle-left fa-5x"></i>
+                </li>
+                <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                    <i class="fas fa-angle-right fa-5x"></i>          
+                </li>
+            </ul>
+            <div class="my-slider">
+                <div class="slider-item">
+                    <div class="card">                
+                        <div class=" alg-ctr">
+                            <img src="./assests/person.png" alt="">
+                            <!-- <img src="https://source.unsplash.com/800x600/?cat" alt=""> -->
+                            <!-- <div class="col mag-l-16">
+                                <h4>John Doe</h4>
+                                <h6>9 Feb, 2021</h6>
+                            </div>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                    </div>
+                </div>
+                
+                <div class="slider-item">
+                    <div class="card">                
+                        <div class="alg-ctr">
+                            <img src="./assests/person.png" alt="">
+                            <div class="col mag-l-16">
+                                <h4>John Doe</h4>
+                                <h6>9 Feb, 2021</h6>
+                            </div>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                    </div>
+                </div>
+                
+                <div class="slider-item ">
+                    <div class="card">                
+                        <div class="alg-ctr">
+                            <img src="./assests/person.png" alt="">
+                            <div class="col mag-l-16">
+                                <h4>John Doe</h4>
+                                <h6>9 Feb, 2021</h6>
+                            </div>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="card">                
+                        <div class="alg-ctr">
+                            <img src="./assests/person.png" alt="">
+                            <div class="col mag-l-16">
+                                <h4>John Doe</h4>
+                                <h6>9 Feb, 2021</h6>
+                            </div>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                    </div>
+                </div>
+            </div>    
+        </div> --> 
+        <div class="people col alg-ctr jst-ctr">
+            <h1 >In case of any query</h1>
+            <button class="sm-primary " onclick="goToContact()" >Contact us</button>
+        </div>    
+    </section>
+    <footer class="row jst-spc-ard warp">
+        <div class="social col alg-ctr sm-twelve ">
+            <a href="./index.html">
+                <img src="./assests/prospaerto-logo.svg" alt="Prospareto logo" width="154" height="60" class="logo-pros">
+            </a>
+            <a href="https://itmtb.com/" target="_blank">
+                <img src="./assests/itmtb.svg" alt="Logo itmtb" width="154" height="60" class="logo-itmtb">
+            </a>
+            <div class="row twelve jst-spc-ard fitl sm-jst-ctr">
+                <a href="https://www.facebook.com/itmtbtechnologies-109222130960752" target="_black">
+                    <img src="./assests/facebook_logo.png" alt="itmtb facebook" >
+                </a>
+                <a href="https://instagram.com/itmtbtechnologies/" target="_black">
+                    <img src="./assests/instagram_logo.png" alt="itmtb instagram">
+                </a>
+                <a href="https://twitter.com/ItmtbT" target="_black">
+                    <img src="./assests/twitter_2.png" alt="twitter itmtb">
+                </a>
+                <a href="https://www.linkedin.com/company/itmtb-technologies" target="_black">
+                    <img src="./assests/linkedin_logo.png" alt="linkedin itmtb">
+                </a>
+            </div>
+        </div>
+        <div class=" sm-six about col ">
+            <ul>
+                <li>
+                    <a href="https://itmtb.com/about_us/index.html" target="_blank">About us</a>
+                </li>
+                <li>
+                    <a href="https://customer.prospareto.com/faq" target="_blank">FAQs</a>
+                </li>
+                <li>
+                    <a href="https://customer.prospareto.com/terms" >Terms Explanations</a>
+                </li>
+                <li>
+                    <a href="https://itmtb.com/terms_n_conditions/index.html" target="_blank" >Terms and conditions</a>
+                </li>
+                <li>
+                    <a href="https://customer.prospareto.com/disclosure" >Disclosures</a>
+                </li>
+                <li>
+                    <a href="https://itmtb.com/privacy_policy/" >Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sm-six contact-us ">
+            <h3>Contact us:</h3>
+            <h4>
+                <a href="mailto:hello@itmtb.com">hello@itmtb.com</a>
+            </h4>
+            <h4>
+                <a href="tel:+917666859406">+91-7666859406</a>
+            </h4>
+            <a href="https://play.google.com/store/apps/details?id=com.itmtb.fe.prod">
+                <img height="50" width="140" alt="google play button" src="./assests/googlePlay.png" >
+            </a>
+        </div>
+        <div class="row twelve jst-ctr txt-ctr browser">
+            <h6>Compatible with:</h6>
+            <img src="./assests/ChromeLogo.png" alt="chorme brower">
+            <img src="./assests/FirefoxLogo.png" alt=" FirefoxLogo ">
+            <img src="./assests/SafariLogo.png" alt=" SafariLogo ">
+            <img src="./assests/ms_edge.png" alt=" edge logo ">
+        </div>
+        <div class="row twelve jst-ctr txt-ctr copy-right">
+            <h6>Copyright 2021, itmtb Technologies Private Limited. All Rights Reserved.</h6>
+        </div>
+    </footer>
+    <div class="video-cont" onclick="removeVedio()" id="video-cont">
+        <div class="cross" onclick="removeVedio()" style="cursor: pointer;">
+            <img src="./assests/close-24px.svg" alt="cross-icon" style="color: #ffffff;">
+        </div>
+        <div class="iframe-cont">
+            <iframe width='100%' height="100%" src="" id="ifarme" frameborder="0" allow='autoplay' allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+    <script>
+        
+         function showMenu() {
+            document.getElementById("drop-down").style.display = "flex";
+        }
+        function removeMenu() {
+            document.getElementById("drop-down").style.display = "none";
+        }
+        document.addEventListener("click", function () {
+            if (event.target.id === "mob-menu") {
+                document.getElementById("drop-down-mob").style.display = "flex";
+            } else {
+                document.getElementById("drop-down-mob").style.display = "none";
+            }
+        });
+        window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+        
+//         const slider = tns({
+//     container: '.my-slider',
+//     loop: true,
+//     items: 1,
+//     slideBy: 'page',
+//     nav: true,    
+//     navPosition: 'bottom',
+//     navContainer: false,
+//     navAsThumbnails: false,
+//     preventScrollOnTouch: 'auto',
+//     autoplay: true,
+//     speed: 500,
+//     center:true,
+//     autoplayButtonOutput: false,
+//     mouseDrag: true,
+//     lazyload: false,
+//     controlsContainer: "#customize-controls",
+//     responsive: {
+//         400: {
+//             center:true,
+//             container:"#center",
+//             items: 1,
+//             mouseDrag: true
+
+//         },
+//         640: {
+//             center:"#center",
+//             items: 2,
+//             mouseDrag: true
+//         },
+        
+//         768: {
+//             items: 3,
+//             center:"#center",
+//             mouseDrag: true
+//         }
+//     }
+
+//   });
+  const somegreenFunction = (color,btn) =>{
+  const btnSubScreen = document.querySelectorAll("#btn-sub-screen")
+  const ArrBtnSubScreen = Array.from(btnSubScreen);
+  for(let i=0;i<ArrBtnSubScreen.length;i++){
+    if(i==btn-1){
+      ArrBtnSubScreen[i].classList.add(color);
+    }else{
+      ArrBtnSubScreen[i].classList.remove('text-green');
+      ArrBtnSubScreen[i].classList.remove('text-purple');
+      ArrBtnSubScreen[i].classList.remove('text-darkgreen');
+      ArrBtnSubScreen[i].classList.remove('text-orange');
+    }
+  }
+  // var element = document.getElementById(btn);
+
+}
+
+  var divs = ["Div1", "Div2", "Div3"];
+    var visibleDivId = null;
+function divVisibility(divId,color,btn) {
+  if(visibleDivId == divId) {
+    visibleDivId = 'Div1';
+  } else {
+    visibleDivId = divId;
+    somegreenFunction(color,btn);
+  }
+  hideNonVisibleDivs();
+  
+}
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "flex";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+        
+       
+        function removeVedio(){
+            const vedioCon = document.getElementById('video-cont');
+            const videoFrame = document.getElementById('ifarme');
+            videoFrame.src='';
+            vedioCon.style.display = 'none';
+        }
+        function loadVideo(){
+            const vedioCon = document.getElementById('video-cont');
+            const videoFrame = document.getElementById('ifarme');
+            videoFrame.src='https://www.youtube.com/embed/Z2LAmmWSKXM?autoplay=1;rel=0';
+            vedioCon.style.display = 'flex';
+        }
+        function setChatBot(){
+            !function(e,t){if(!document.getElementById(e)){var c=document.createElement("script");c.src="https://js.hs-analytics.net/analytics/1611310500000/9202433.js",c.type="text/javascript",c.id=e;var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(c,n)}}("hs-analytics");
+            !function(t,e,r){if(!document.getElementById(t)){var n=document.createElement("script");for(var a in n.src="https://js.hs-banner.com/9202433.js",n.type="text/javascript",n.id=t,r)r.hasOwnProperty(a)&&n.setAttribute(a,r[a]);var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)}}("cookieBanner-9202433",0,{"data-cookieconsent":"ignore","data-loader":"hs-scriptloader","data-hsjs-portal":9202433,"data-hsjs-env":"prod"});
+            !function(t,e,r){if(!document.getElementById(t)){var n=document.createElement("script");for(var a in n.src="https://js.usemessages.com/conversations-embed.js",n.type="text/javascript",n.id=t,r)r.hasOwnProperty(a)&&n.setAttribute(a,r[a]);var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)}}("hubspot-messages-loader",0,{"data-loader":"hs-scriptloader","data-hsjs-portal":9202433,"data-hsjs-env":"prod"});
+            !function(t,e,r){if(!document.getElementById(t)){var n=document.createElement("script");for(var a in n.src="https://js.hscollectedforms.net/collectedforms.js",n.type="text/javascript",n.id=t,r)r.hasOwnProperty(a)&&n.setAttribute(a,r[a]);var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)}}("CollectedForms-9202433",0,{"crossorigin":"anonymous","data-leadin-portal-id":9202433,"data-leadin-env":"prod","data-loader":"hs-scriptloader","data-hsjs-portal":9202433,"data-hsjs-env":"prod"});
+        }
+        if (window.addEventListener){
+            window.addEventListener('load', setChatBot, false);
+        }
+        else if (window.attachEvent) {
+            window.attachEvent('onload', setChatBot);
+        }else{
+            setChatBot();
+        }
+    </script>
+    <!-- <script>
+        var counter = 1;
+        function handleSectionChange({type}){
+            switch(type){
+                case(1):
+                    divVisibility('Div1','text-green','1')
+                    break;
+                // case(2):
+                //     divVisibility('Div2','text-purple','2')
+                //     break;
+                case(3):
+                    divVisibility('Div3','text-darkgreen','3')
+                    break;
+                // case(4):
+                //     divVisibility('Div4','text-green','4')
+                //     break;
+                case(5):
+                    divVisibility('Div5','text-orange','5')
+                    break;
+                default:
+                    return;
+            }
+        }
+        setInterval(() => {
+            handleSectionChange({type:counter});
+            if(counter < 5){
+                counter++
+            }else{
+                counter = 1;
+            }
+        }, 4000);   
+    </script> -->
+    <script>
+        var counter = 1;
+        handleSectionChange(1);
+        function handleSectionChange({type}){
+            switch(type){
+                case(1):
+                    divVisibility('Div1','text-green','1')
+                    break;
+                case(2):
+                    divVisibility('Div2','text-darkgreen','2')
+                    break;
+                case(3):
+                    divVisibility('Div3','text-orange','3')
+                    break;
+                default:
+                    divVisibility('Div1','text-green','1')
+                    return;
+            }
+        }
+        setInterval(() => {
+            handleSectionChange({type:counter});
+            if(counter < 3){
+                counter++
+            }else{
+                counter = 1;
+            }
+        }, 4000);   
+    </script>
+</body>
+
+</html>

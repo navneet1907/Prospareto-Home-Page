@@ -1,0 +1,12 @@
+[
+    {
+        "AllowedHeaders": ["Content-Length"],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]

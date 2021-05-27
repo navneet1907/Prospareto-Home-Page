@@ -1,0 +1,74 @@
+footer{
+    border-top: 1px solid #DEDEDE;
+    padding: 40px 0;
+}
+.logo-pros{
+    width: 184px;
+}
+.social > .logo-itmtb{
+    margin-top: 12px;
+    width: 108px;
+}
+.fitl{
+    margin-top: 30px;
+}
+.fitl > a > img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+.contact-us > h3{
+    font-size: 0.875rem;
+    color: #4E4E4E;
+    font-weight: 500;
+}
+.contact-us > h4{
+    line-height: 1.875em;
+    color: var(--primary-clr);
+}
+.contact-us > a > img{
+    width: 164px;
+}
+.browser{
+    margin-top: 50px;
+}
+.browser > img {
+    object-fit: cover;
+    margin: 0 6px;
+    width: 15px;
+    height: 15px;
+}
+.copy-right{
+    margin-top: 12px;
+}
+@media (max-width: 600px){
+    .about{
+        order: 1;
+        padding: 0px 16px;
+    }
+    .social{
+        order: 3;
+    }
+    .contact-us{
+        order: 2;
+    }
+    .browser{
+        order: 4;
+    }
+    .copy-right{
+        order: 5;
+    }
+    .contact-us > a > img{
+        width: 140px;
+    }
+    .logo-pros{
+        margin-top: 64px;
+        width: 134px;
+    }
+    .fitl > a > img{
+        object-fit: cover;
+        margin: 0 10px;
+        width: 24px;
+        height: 24px;
+    }
+}
