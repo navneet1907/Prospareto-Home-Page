@@ -1,6 +1,3 @@
-#Overview
-
-The provided code is an HTML document for a web application named "Prospareto". The application appears to be a platform for stock market investment recommendations and financial guidance. The website provides users with well-researched share market investment recommendations from SEBI registered experts.
 
 #Features
 Navigation Bar: The navigation bar contains links to various sections of the website, including Stock Recommenders, Financial Guidance, Blogs, Learn, and Contact Us. It also provides login options for both customers and experts.
